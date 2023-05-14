@@ -1,4 +1,4 @@
-# todo_app
+# notes_app
 
 Notes Application
 
