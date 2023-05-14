@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Notes Application',
+      title: 'Notes App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -19,4 +19,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-

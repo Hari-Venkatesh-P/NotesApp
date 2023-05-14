@@ -1,5 +1,7 @@
+import 'package:todo_app/entity/notes_entity.dart';
+
 class Notes {
-  String? id;
+  int? id;
   String priority;
   String title;
   String description;
@@ -10,12 +12,19 @@ class Notes {
       required this.title,
       required this.description});
 
-  dynamic toJson(Notes note) {
-    return {
-      "id": note.id ?? '',
-      "priority": note.priority,
-      "title": note.title,
-      "description": note.description,
-    };
+  static NotesEntity toEntity(Notes notes) {
+    return NotesEntity(
+        id: notes.id ?? -1,
+        title: notes.title,
+        description: notes.description,
+        priority: notes.priority);
+  }
+
+  static Notes fromEntity(NotesEntity entity) {
+    return Notes(
+        id: entity.id,
+        title: entity.title,
+        description: entity.description,
+        priority: entity.priority);
   }
 }

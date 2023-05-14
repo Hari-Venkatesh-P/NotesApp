@@ -1,6 +1,6 @@
 # todo_app
 
-Todo Application
+Notes Application
 
 ## Getting Started
 

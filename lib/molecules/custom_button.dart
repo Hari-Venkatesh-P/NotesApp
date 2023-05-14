@@ -22,7 +22,7 @@ class CustomButton extends StatelessWidget {
     return ElevatedButton(
       style: raisedButtonStyle,
       onPressed: () {
-        onButtonPressed('text');
+        onButtonPressed();
       },
       child: Text(
         labelText,

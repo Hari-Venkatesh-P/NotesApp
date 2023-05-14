@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/model/notes.dart';
-import 'package:todo_app/utils/constants.dart';
 
 class NotesCard extends StatefulWidget {
   final Notes notes;
